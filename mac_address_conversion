@@ -1,3 +1,8 @@
+'''
+Sample code to convert mac address
+
+Author: Sandeep Joseph
+'''
 
 def mac_convert_hypen(mac):
     # remove the delimiter if any 
