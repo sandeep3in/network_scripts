@@ -46,7 +46,7 @@ resource "dnacenter_reserve_ip_subpool" "example" {
     ipv4_prefix        = "true"
     ipv4_prefix_length = "24"
     ipv4_subnet        = "14.0.${count.index}.0"
-    name    = "tform-reserve-${count.index}r"
+    name    = "tform-reserve-${count.index}"
     site_id = "05f34ee5-8f2d-4063-8391-b2a3d1998897"
   
     }
