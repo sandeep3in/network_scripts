@@ -1,5 +1,7 @@
 from ciscoconfparse import CiscoConfParse
 
+# return a dict with interface as key and value is ipaddr/mask
+
 def int_dict_ip_mask(config_file):
     config_file.seek(0)
     
@@ -18,6 +20,9 @@ def int_dict_ip_mask(config_file):
 
     return int_details
 
+
+# return a dict with interface as key and value is ipaddr
+
 def int_dict_ip(config_file):
     config_file.seek(0)
     
@@ -35,6 +40,10 @@ def int_dict_ip(config_file):
             if ip != 'no_match':
                 int_details[intf]=ip
     return int_details
+
+
+
+# return a dict with vlan as key and value is ipaddr
 
 def int_vlan(config_file):
     config_file.seek(0)
